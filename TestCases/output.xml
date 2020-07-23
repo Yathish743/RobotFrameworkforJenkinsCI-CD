@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200720 15:37:49.781" rpa="false">
+<suite id="s1" name="TestSuites" source="C:\Users\win7\PycharmProjects\RobotFramework\TestCases\TestSuites">
+<kw name="Before each Test Suite" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Suite Started</arg>
+</arguments>
+<msg timestamp="20200720 15:37:51.333" level="INFO">Test Suite Started</msg>
+<status status="PASS" starttime="20200720 15:37:51.333" endtime="20200720 15:37:51.333"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:37:51.332" endtime="20200720 15:37:51.334"></status>
+</kw>
+<suite id="s1-s1" name="TC 001 LoginFunctionality" source="C:\Users\win7\PycharmProjects\RobotFramework\TestCases\TestSuites\TC_001_LoginFunctionality.robot">
+<test id="s1-s1-t1" name="Scroll down using JavaScript">
+<kw name="Start Browser and Maximize without Arguments" library="OpenBrowser" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Url1}</arg>
+<arg>${Browser1}</arg>
+</arguments>
+<msg timestamp="20200720 15:37:51.380" level="INFO">Opening browser 'Chrome' to base url 'https://www.rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20200720 15:37:51.379" endtime="20200720 15:38:06.016"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200720 15:38:06.016" endtime="20200720 15:38:07.401"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:37:51.378" endtime="20200720 15:38:07.401"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,1000)</arg>
+</arguments>
+<msg timestamp="20200720 15:38:07.409" level="INFO">Executing JavaScript:
+window.scrollTo(0,1000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20200720 15:38:07.408" endtime="20200720 15:38:07.556"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5seconds</arg>
+</arguments>
+<msg timestamp="20200720 15:38:12.557" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200720 15:38:07.556" endtime="20200720 15:38:12.557"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(1000,0)</arg>
+</arguments>
+<msg timestamp="20200720 15:38:12.558" level="INFO">Executing JavaScript:
+window.scrollTo(1000,0)
+Without any arguments.</msg>
+<status status="PASS" starttime="20200720 15:38:12.558" endtime="20200720 15:38:12.565"></status>
+</kw>
+<kw name="TearDown the Browser and close" library="OpenBrowser" type="teardown">
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20200720 15:38:12.579" level="INFO">${Title} = Practice Page</msg>
+<status status="PASS" starttime="20200720 15:38:12.567" endtime="20200720 15:38:12.579"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<msg timestamp="20200720 15:38:12.580" level="INFO">Practice Page</msg>
+<status status="PASS" starttime="20200720 15:38:12.580" endtime="20200720 15:38:12.580"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200720 15:38:12.581" endtime="20200720 15:38:15.433"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:38:12.566" endtime="20200720 15:38:15.434"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:37:51.377" endtime="20200720 15:38:15.434" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Open Context menu or Right Click">
+<kw name="Start Browser and Maximize without Arguments" library="OpenBrowser" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Url1}</arg>
+<arg>${Browser1}</arg>
+</arguments>
+<msg timestamp="20200720 15:38:15.456" level="INFO">Opening browser 'Chrome' to base url 'https://www.rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20200720 15:38:15.455" endtime="20200720 15:38:24.590"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200720 15:38:24.590" endtime="20200720 15:38:25.903"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:38:15.454" endtime="20200720 15:38:25.903"></status>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[@id='opentab']</arg>
+</arguments>
+<status status="PASS" starttime="20200720 15:38:25.904" endtime="20200720 15:38:26.177"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5seconds</arg>
+</arguments>
+<msg timestamp="20200720 15:38:31.178" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200720 15:38:26.177" endtime="20200720 15:38:31.178"></status>
+</kw>
+<kw name="TearDown the Browser and close" library="OpenBrowser" type="teardown">
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20200720 15:38:31.188" level="INFO">${Title} = Practice Page</msg>
+<status status="PASS" starttime="20200720 15:38:31.181" endtime="20200720 15:38:31.188"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<msg timestamp="20200720 15:38:31.189" level="INFO">Practice Page</msg>
+<status status="PASS" starttime="20200720 15:38:31.188" endtime="20200720 15:38:31.189"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200720 15:38:31.189" endtime="20200720 15:38:33.774"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:38:31.179" endtime="20200720 15:38:33.775"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:38:15.436" endtime="20200720 15:38:33.775" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Double Click">
+<kw name="Start Browser and Maximize without Arguments" library="OpenBrowser" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Url1}</arg>
+<arg>${Browser1}</arg>
+</arguments>
+<msg timestamp="20200720 15:38:33.779" level="INFO">Opening browser 'Chrome' to base url 'https://www.rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20200720 15:38:33.778" endtime="20200720 15:38:41.636"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200720 15:38:41.636" endtime="20200720 15:38:42.825"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:38:33.778" endtime="20200720 15:38:42.826"></status>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double clicks the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@id="confirmbtn"]</arg>
+</arguments>
+<msg timestamp="20200720 15:38:42.830" level="INFO">Double clicking element 'xpath://input[@id="confirmbtn"]'.</msg>
+<status status="PASS" starttime="20200720 15:38:42.829" endtime="20200720 15:38:43.075"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5seconds</arg>
+</arguments>
+<msg timestamp="20200720 15:38:48.076" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200720 15:38:43.076" endtime="20200720 15:38:48.076"></status>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>accept</arg>
+</arguments>
+<status status="PASS" starttime="20200720 15:38:48.077" endtime="20200720 15:38:48.098"></status>
+</kw>
+<kw name="TearDown the Browser and close" library="OpenBrowser" type="teardown">
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20200720 15:38:48.197" level="INFO">${Title} = Practice Page</msg>
+<status status="PASS" starttime="20200720 15:38:48.101" endtime="20200720 15:38:48.198"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<msg timestamp="20200720 15:38:48.198" level="INFO">Practice Page</msg>
+<status status="PASS" starttime="20200720 15:38:48.198" endtime="20200720 15:38:48.199"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200720 15:38:48.199" endtime="20200720 15:38:50.692"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:38:48.100" endtime="20200720 15:38:50.693"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:38:33.777" endtime="20200720 15:38:50.693" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200720 15:37:51.334" endtime="20200720 15:38:50.696"></status>
+</suite>
+<suite id="s1-s2" name="TC 002 FunctionalTest" source="C:\Users\win7\PycharmProjects\RobotFramework\TestCases\TestSuites\TC_002_FunctionalTest.robot">
+<test id="s1-s2-t1" name="Mouse Down and Up">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200720 15:38:50.722" level="INFO">Opening browser 'Chrome' to base url 'https://www.rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20200720 15:38:50.722" endtime="20200720 15:38:59.667"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200720 15:38:59.668" endtime="20200720 15:39:00.867"></status>
+</kw>
+<kw name="Mouse Down" library="SeleniumLibrary">
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<arguments>
+<arg>xpath://button[text()='Home']</arg>
+</arguments>
+<msg timestamp="20200720 15:39:00.868" level="INFO">Simulating Mouse Down on element 'xpath://button[text()='Home']'.</msg>
+<status status="PASS" starttime="20200720 15:39:00.867" endtime="20200720 15:39:00.915"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10seconds</arg>
+</arguments>
+<msg timestamp="20200720 15:39:10.916" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200720 15:39:00.915" endtime="20200720 15:39:10.917"></status>
+</kw>
+<kw name="Mouse Up" library="SeleniumLibrary">
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<arguments>
+<arg>xpath://button[text()='Home']</arg>
+</arguments>
+<msg timestamp="20200720 15:39:10.919" level="INFO">Simulating Mouse Up on element 'xpath://button[text()='Home']'.</msg>
+<status status="PASS" starttime="20200720 15:39:10.919" endtime="20200720 15:39:11.513"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10 seconds</arg>
+</arguments>
+<msg timestamp="20200720 15:39:21.515" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200720 15:39:11.514" endtime="20200720 15:39:21.515"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200720 15:39:21.517" endtime="20200720 15:39:24.013"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:38:50.720" endtime="20200720 15:39:24.014" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="Mouse Hover">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200720 15:39:24.023" level="INFO">Opening browser 'Chrome' to base url 'https://www.rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20200720 15:39:24.020" endtime="20200720 15:39:32.148"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200720 15:39:32.149" endtime="20200720 15:39:33.326"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,1000)</arg>
+</arguments>
+<msg timestamp="20200720 15:39:33.328" level="INFO">Executing JavaScript:
+window.scrollTo(0,1000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20200720 15:39:33.327" endtime="20200720 15:39:33.347"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5seconds</arg>
+</arguments>
+<msg timestamp="20200720 15:39:38.355" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200720 15:39:33.351" endtime="20200720 15:39:38.356"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath://button[@id="mousehover"]</arg>
+</arguments>
+<msg timestamp="20200720 15:39:38.359" level="INFO">Simulating Mouse Over on element 'xpath://button[@id="mousehover"]'.</msg>
+<status status="PASS" starttime="20200720 15:39:38.359" endtime="20200720 15:39:38.424"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5seconds</arg>
+</arguments>
+<msg timestamp="20200720 15:39:43.426" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200720 15:39:38.425" endtime="20200720 15:39:43.427"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200720 15:39:43.428" endtime="20200720 15:39:45.568"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:39:24.018" endtime="20200720 15:39:45.569" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200720 15:38:50.702" endtime="20200720 15:39:45.574"></status>
+</suite>
+<kw name="After each Test Suite" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test Suite Entered</arg>
+</arguments>
+<msg timestamp="20200720 15:39:45.587" level="INFO">Test Suite Entered</msg>
+<status status="PASS" starttime="20200720 15:39:45.587" endtime="20200720 15:39:45.587"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:39:45.586" endtime="20200720 15:39:45.588"></status>
+</kw>
+<status status="PASS" starttime="20200720 15:37:49.785" endtime="20200720 15:39:45.588"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="TestSuites">TestSuites</stat>
+<stat pass="3" fail="0" id="s1-s1" name="TC 001 LoginFunctionality">TestSuites.TC 001 LoginFunctionality</stat>
+<stat pass="2" fail="0" id="s1-s2" name="TC 002 FunctionalTest">TestSuites.TC 002 FunctionalTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

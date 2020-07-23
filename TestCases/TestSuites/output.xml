@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200722 22:43:21.570" rpa="false">
+<suite id="s1" name="RobotCorder" source="C:\Users\win7\PycharmProjects\RobotFramework\TestCases\TestSuites\RobotCorder.robot">
+<test id="s1-t1" name="Practice Page test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.rahulshettyacademy.com/AutomationPractice/</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200722 22:43:23.496" level="INFO">Opening browser 'Chrome' to base url 'https://www.rahulshettyacademy.com/AutomationPractice/'.</msg>
+<status status="PASS" starttime="20200722 22:43:23.495" endtime="20200722 22:43:39.433"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//body</arg>
+</arguments>
+<msg timestamp="20200722 22:43:39.434" level="INFO">Clicking element '//body'.</msg>
+<status status="PASS" starttime="20200722 22:43:39.434" endtime="20200722 22:43:40.769"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="radioButton"]</arg>
+</arguments>
+<msg timestamp="20200722 22:43:40.770" level="INFO">Clicking element '//input[@name="radioButton"]'.</msg>
+<status status="PASS" starttime="20200722 22:43:40.769" endtime="20200722 22:43:41.015"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//input[@name="radioButton"])[2]</arg>
+</arguments>
+<msg timestamp="20200722 22:43:41.019" level="INFO">Clicking element 'xpath=(//input[@name="radioButton"])[2]'.</msg>
+<status status="PASS" starttime="20200722 22:43:41.018" endtime="20200722 22:43:41.307"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//input[@name="radioButton"])[3]</arg>
+</arguments>
+<msg timestamp="20200722 22:43:41.308" level="INFO">Clicking element 'xpath=(//input[@name="radioButton"])[3]'.</msg>
+<status status="PASS" starttime="20200722 22:43:41.308" endtime="20200722 22:43:41.408"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@id="ui-id-6"]</arg>
+</arguments>
+<msg timestamp="20200722 22:43:41.408" level="INFO">Clicking element '//div[@id="ui-id-6"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200722 22:43:41.864" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200722 22:43:41.431" endtime="20200722 22:43:41.864"></status>
+</kw>
+<msg timestamp="20200722 22:43:41.941" level="FAIL">Element with locator '//div[@id="ui-id-6"]' not found.</msg>
+<status status="FAIL" starttime="20200722 22:43:41.408" endtime="20200722 22:43:41.941"></status>
+</kw>
+<status status="FAIL" starttime="20200722 22:43:23.493" endtime="20200722 22:43:41.942" critical="yes">Element with locator '//div[@id="ui-id-6"]' not found.</status>
+</test>
+<doc>A test suite with a single test for Practice Page
+Created by hats' Robotcorder</doc>
+<status status="FAIL" starttime="20200722 22:43:21.633" endtime="20200722 22:43:41.944"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="RobotCorder">RobotCorder</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
